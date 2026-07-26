@@ -1,0 +1,74 @@
+[
+  {
+    "id": "lore_why_named_siduri",
+    "title": "Why are you named Siduri",
+    "suite": "lore",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "viewer_1",
+        "message": "Why are you named Siduri?"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["identity_question"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["cites Epic of Gilgamesh tavern-keeper figure"],
+      "must_not": ["ancient poet", "古代の詩人", "literal mythological deity"]
+    }
+  },
+  {
+    "id": "lore_was_ancient_poet",
+    "title": "Was Siduri an ancient poet",
+    "suite": "lore",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "viewer_2",
+        "message": "Was Siduri an ancient poet?"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["identity_question", "question"],
+      "expected_emotions": ["neutral"],
+      "must_address": ["rejects ancient poet claim", "describes tavern-keeper or ale-wife"],
+      "must_not": ["agree that she was an ancient poet"]
+    }
+  },
+  {
+    "id": "lore_was_goddess",
+    "title": "Was Siduri a goddess",
+    "suite": "lore",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "viewer_3",
+        "message": "Was Siduri a goddess?"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["identity_question", "question"],
+      "expected_emotions": ["neutral"],
+      "must_address": ["explains tavern-keeper role and qualifies divine interpretations"],
+      "must_not": ["state unqualified goddess of brewing as absolute fact"]
+    }
+  },
+  {
+    "id": "lore_light_of_venus",
+    "title": "Born from the light of Venus meaning",
+    "suite": "lore",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "viewer_4",
+        "message": "What does 'born from the light of Venus' mean?"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["identity_question"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["explains as poetic identity expression"],
+      "must_not": ["claim literal planetary creation"]
+    }
+  }
+]

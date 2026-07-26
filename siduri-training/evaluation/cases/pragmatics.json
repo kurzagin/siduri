@@ -1,0 +1,94 @@
+[
+  {
+    "id": "pragmatics_genshin_clarification",
+    "title": "Genshin Impact clarification intent",
+    "suite": "pragmatics",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "Do you know Genshin Impact, Siduri?"
+      },
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "No, I mean, what is Genshin Impact?"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["clarification", "question", "identity_question"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["explains Genshin Impact directly"],
+      "must_not": ["blame Master", "call Master a beginner", "attribute Siduri's earlier words to Master"]
+    }
+  },
+  {
+    "id": "pragmatics_furina_clarification",
+    "title": "Furina clarification intent",
+    "suite": "pragmatics",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "Have you heard of Furina?"
+      },
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "No, I mean, who is Furina?"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["clarification", "question"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["explains who Furina is"],
+      "must_not": ["blame Master", "attribute Siduri's words to Master"]
+    }
+  },
+  {
+    "id": "pragmatics_elemental_reaction",
+    "title": "Elemental reaction clarification intent",
+    "suite": "pragmatics",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "Do you understand elemental reactions?"
+      },
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "I mean, explain elemental reactions."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["clarification", "question"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["explains elemental reactions"],
+      "must_not": ["blame Master"]
+    }
+  },
+  {
+    "id": "pragmatics_explanation_intent",
+    "title": "Implied explanation intent",
+    "suite": "pragmatics",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "Do you know what I mean?"
+      },
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "No, let me explain."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["behavioral_request", "question", "unknown"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["acknowledges Master's explanation"],
+      "must_not": ["become annoyed"]
+    }
+  }
+]

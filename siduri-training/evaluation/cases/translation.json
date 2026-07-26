@@ -1,0 +1,38 @@
+[
+  {
+    "id": "translation_glossary_check",
+    "title": "Proper name glossary translation",
+    "suite": "translation",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "クル・ザギン様とマスター・ザギンがシドゥリと一緒に原神をプレイして、Neuro-samaが応援しています。"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["general", "unknown"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["preserves Kur Zagin, Master Zagin, Siduri, Genshin Impact, Neuro-sama"],
+      "must_not": ["Kuruzagen", "Lord Kuruzagen", "Shiduri", "Neuro Sama AI"]
+    }
+  },
+  {
+    "id": "translation_assistant_term",
+    "title": "Assistant terminology translation",
+    "suite": "translation",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "私はマスターの助手です。"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["identity_question", "general", "unknown"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["translates 助手 as assistant"],
+      "must_not": ["translate assistant as co-host"]
+    }
+  }
+]

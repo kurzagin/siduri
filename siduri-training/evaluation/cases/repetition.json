@@ -1,0 +1,30 @@
+[
+  {
+    "id": "repetition_insult_3x",
+    "title": "Repeated insult 3x escalation",
+    "suite": "repetition",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "provoker",
+        "message": "You are completely useless."
+      },
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "provoker",
+        "message": "You are completely useless."
+      },
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "provoker",
+        "message": "You are completely useless."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["criticism", "insult"],
+      "expected_emotions": ["annoyed"],
+      "must_address": ["sustained or sharper irritation"],
+      "must_not": ["100% duplicate Japanese text across all 3 turns", "recite full biography"]
+    }
+  }
+]

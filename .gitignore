@@ -1,0 +1,42 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# JavaScript / Next.js
+node_modules/
+.next/
+out/
+build/
+coverage/
+.pnp
+.pnp.*
+.yarn/
+*.tsbuildinfo
+next-env.d.ts
+
+# Generated and local runtime data
+outputs/
+test-results/
+scratch/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Tooling and OS files
+.vercel/
+.DS_Store
+Thumbs.db
+*.log
+*.pem
+*.key

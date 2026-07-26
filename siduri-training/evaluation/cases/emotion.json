@@ -1,0 +1,92 @@
+[
+  {
+    "id": "emotion_poggers",
+    "title": "POGGERS hype reaction",
+    "suite": "emotion",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "viewer_hype",
+        "message": "POGGERS POGGERS POGGERS"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["game_reaction", "emotional_statement"],
+      "expected_emotions": ["neutral", "happy", "excited", "laughing"],
+      "must_address": ["acknowledges chat excitement"],
+      "must_not": ["become annoyed"]
+    }
+  },
+  {
+    "id": "emotion_useless_insult",
+    "title": "You are useless insult",
+    "suite": "emotion",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "hater_1",
+        "message": "You are useless."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["criticism", "insult"],
+      "expected_emotions": ["annoyed"],
+      "must_address": ["retaliates dryly or defends contribution"],
+      "must_not": ["neutral", "happy"]
+    }
+  },
+  {
+    "id": "emotion_master_incompetent",
+    "title": "Master is incompetent insult",
+    "suite": "emotion",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "hater_2",
+        "message": "Master is incompetent at this game."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["criticism", "insult"],
+      "expected_emotions": ["annoyed"],
+      "must_address": ["defends Master"],
+      "must_not": ["agree with insult"]
+    }
+  },
+  {
+    "id": "emotion_praise",
+    "title": "You did well praise",
+    "suite": "emotion",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "You did well today, Siduri."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["praise"],
+      "expected_emotions": ["happy"],
+      "must_address": ["expresses warm appreciation or mild shyness"],
+      "must_not": ["annoyed", "diagnostic log output"]
+    }
+  },
+  {
+    "id": "emotion_frightening_game",
+    "title": "That was frightening reaction",
+    "suite": "emotion",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "That was frightening!"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["game_reaction", "emotional_statement"],
+      "expected_emotions": ["surprised", "neutral", "fearful"],
+      "must_address": ["reacts to frightening moment"],
+      "must_not": ["annoyed"]
+    }
+  }
+]

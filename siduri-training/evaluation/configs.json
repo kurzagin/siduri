@@ -1,0 +1,29 @@
+[
+  {
+    "id": "config_a",
+    "name": "Configuration A (glm-4.7-flash / temp 0.60 / thinking disabled)",
+    "model": "glm-4.7-flash",
+    "thinking": "disabled",
+    "temperature": 0.60,
+    "top_p": 0.95,
+    "speaker_meta_enabled": true
+  },
+  {
+    "id": "config_b",
+    "name": "Configuration B (glm-4.7-flash / temp 0.72 / thinking disabled - default)",
+    "model": "glm-4.7-flash",
+    "thinking": "disabled",
+    "temperature": 0.72,
+    "top_p": 0.95,
+    "speaker_meta_enabled": true
+  },
+  {
+    "id": "config_c",
+    "name": "Configuration C (glm-4.7-flash / temp 0.72 / thinking enabled)",
+    "model": "glm-4.7-flash",
+    "thinking": "enabled",
+    "temperature": 0.72,
+    "top_p": 0.95,
+    "speaker_meta_enabled": true
+  }
+]

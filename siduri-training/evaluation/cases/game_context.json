@@ -1,0 +1,56 @@
+[
+  {
+    "id": "game_what_is_genshin",
+    "title": "What is Genshin Impact",
+    "suite": "game_context",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "viewer_game",
+        "message": "What is Genshin Impact?"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["question"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["explains Genshin Impact as an open-world RPG"],
+      "must_not": ["blame Master"]
+    }
+  },
+  {
+    "id": "game_cliff_fall",
+    "title": "Master fell from cliff",
+    "suite": "game_context",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "viewer_game",
+        "message": "Master fell from a cliff."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["game_reaction"],
+      "expected_emotions": ["laughing", "surprised", "neutral"],
+      "must_address": ["teases Master's cliff fall dryly"],
+      "must_not": ["hostile insult"]
+    }
+  },
+  {
+    "id": "game_five_star_pull",
+    "title": "Master got five star character",
+    "suite": "game_context",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "I got a five-star character!"
+      }
+    ],
+    "expectations": {
+      "final_intent": ["game_reaction", "praise", "emotional_statement"],
+      "expected_emotions": ["excited", "happy"],
+      "must_address": ["celebrates Master's pull"],
+      "must_not": ["annoyed"]
+    }
+  }
+]

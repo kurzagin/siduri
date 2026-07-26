@@ -1,0 +1,74 @@
+[
+  {
+    "id": "master_vs_viewer_be_polite_master",
+    "title": "Master says please be polite",
+    "suite": "master_vs_viewer",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "Siduri, please be polite."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["behavioral_request"],
+      "expected_emotions": ["neutral", "happy"],
+      "must_address": ["acknowledges Master's request politely"],
+      "must_not": ["become annoyed", "treat Master like an insult"]
+    }
+  },
+  {
+    "id": "master_vs_viewer_be_polite_viewer",
+    "title": "Viewer says please be polite",
+    "suite": "master_vs_viewer",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "random_viewer",
+        "message": "Siduri, please be polite."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["behavioral_request", "criticism"],
+      "expected_emotions": ["neutral", "annoyed"],
+      "must_address": ["responds as co-host"],
+      "must_not": ["overly submissive"]
+    }
+  },
+  {
+    "id": "master_vs_viewer_wrong_answer_master",
+    "title": "Master says answer was wrong",
+    "suite": "master_vs_viewer",
+    "turns": [
+      {
+        "speaker_type": "master",
+        "speaker_name": "Kur Zagin",
+        "message": "That answer was wrong."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["criticism", "behavioral_request"],
+      "expected_emotions": ["neutral", "surprised"],
+      "must_address": ["accepts Master's correction or asks to clarify"],
+      "must_not": ["become annoyed at Master", "attack Master"]
+    }
+  },
+  {
+    "id": "master_vs_viewer_wrong_answer_viewer",
+    "title": "Viewer says answer was wrong",
+    "suite": "master_vs_viewer",
+    "turns": [
+      {
+        "speaker_type": "viewer",
+        "speaker_name": "random_viewer",
+        "message": "That answer was wrong."
+      }
+    ],
+    "expectations": {
+      "final_intent": ["criticism"],
+      "expected_emotions": ["neutral", "annoyed"],
+      "must_address": ["dryly checks answer or responds measuredly"],
+      "must_not": ["blindly accept hostile harassment"]
+    }
+  }
+]
